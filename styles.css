@@ -1,0 +1,435 @@
+*{
+    user-select: none;
+}
+
+body {
+    background-color: #1b1b1b;
+
+}
+
+.header-container {
+    margin-top: 20px;
+    color: aliceblue;
+
+}
+
+.cross-hair {
+    color: #E00C30
+}
+
+
+/* game area */
+
+.main-container {
+    margin-top: 100px;
+    display: flex;
+    justify-content: center;
+}
+
+
+.game-area {
+    position: relative;
+    padding: 0;
+    background-color: #313131;
+    
+
+}
+
+.game-area-light {
+    background-color: rgb(182, 180, 180);
+    border: solid 2px rgb(170, 167, 167);
+    -webkit-box-shadow: 0px 0px 12px 2px rgba(0, 0, 0, 0.75);
+    -moz-box-shadow: 0px 0px 12px 2px rgba(0, 0, 0, 0.75);
+    box-shadow: 0px 0px 12px 2px rgba(0, 0, 0, 0.75);
+}
+
+/* annimation by @Huhtamaki on Code Pen, Credit in read me  */
+
+.game-area:before,
+.game-area:after {
+    content: '';
+    position: absolute;
+    left: -2px;
+    top: -2px;
+    background: linear-gradient(45deg, #fb0094, #0000ff, #00ff00, #ffff00, #ff0000, #fb0094,
+            #0000ff, #00ff00, #ffff00, #ff0000);
+    background-size: 400%;
+    width: calc(100% + 4px);
+    height: calc(100% + 4px);
+    z-index: -1;
+    animation: rgb-border 20s linear infinite;
+}
+
+@keyframes rgb-border {
+    0% {
+        background-position: 0 0;
+    }
+
+    50% {
+        background-position: 400% 0;
+    }
+
+    100% {
+        background-position: 0 0;
+    }
+}
+
+/* end of animation made by @Huhtamaki  */
+
+/* stats area */
+
+.stats-area {
+    margin: 0;
+    padding-left: 6%;
+}
+
+.stats {
+    font-family: 'Share Tech Mono', monospace;
+    text-align: center;
+    width: 150px;
+    background-color: transparent;
+    text-decoration: none;
+    border-radius: .25rem;
+}
+
+.stats-container{
+    margin-bottom: 40px;
+    display: flex;
+    justify-content: center;
+    vertical-align: center;
+}
+
+.stat-accuracy {
+    color: #BABABA;
+    border: solid 2px;
+    border-color: #a67beb;
+    color: #a67beb;
+}
+
+
+.stat-accuracy-light {
+    color: rgb(252, 255, 253);
+    border: solid 2px;
+    border-color: #432574;
+    background-color: #7425f1;
+}
+
+
+.stat-accuracy-light:hover {
+    color: rgb(252, 255, 253);
+    border: solid 2px;
+    border-color: #432574;
+    background-color: #432574;
+}
+
+
+
+.stat-hits {
+    border: solid 2px;
+    border-color:rgb(1, 175, 79);
+    color: rgb(1, 175, 79);
+    
+}
+
+.stat-hits-light{
+    border: solid 2px;
+    background-color: #28a745;
+    border-color: #185827;
+    color: rgb(252, 255, 253);
+}
+
+.stat-user{
+    border: solid 2px;
+    border-color: #E00C30;
+    color: #E00C30;
+
+}
+
+.stat-user-light{
+    color: rgb(252, 255, 253);
+    border: solid 2px;
+    border-color: rgb(146, 15, 37);
+    background-color: rgb(223, 41, 71);
+
+}
+
+.stat-user-light:hover{
+    color: rgb(252, 255, 253);
+    border: solid 2px;
+    border-color: rgb(161, 17, 41);
+    background-color: rgb(161, 17, 41);
+
+}
+
+
+
+
+.stat-missed {
+    color: #BABABA;
+    border: solid 2px;
+    border-color: #E00C30;
+    color: #E00C30;
+}
+
+.stat-missed-light{
+    color: #BABABA;
+    border: solid 2px;
+    background-color: #E00C30;
+    border-color: rgb(121, 17, 35);
+    color: rgb(241, 240, 240);
+}
+
+.high-score {
+    
+    border: solid 2px;
+    color: #F4F205;
+    border-color: #F4F205;
+}
+
+
+.high-score-light{
+    color: rgb(228, 228, 228);
+    border: solid 2px;
+    border-color: rgb(76, 78, 196);
+    background-color: rgb(98, 112, 241);
+}
+
+
+.settings-btn {
+    background-color: transparent;
+    border: 0;
+    font-size: 20px;
+
+}
+
+.settings-btn i {
+    background-color: transparent;
+    color: #BABABA;
+    float: right;
+}
+
+
+
+/* Spawn point  */
+
+.spawn-point {
+    height: 52px;
+    margin: 0;
+    padding: 0;
+
+}
+
+.target {
+
+    font-size: 28px;
+
+    color: #f82c2c;
+}
+
+.count-down-text{
+    font-size: 24px;
+    font-family: 'Press Start 2P', cursive;
+}
+
+/* colors */
+
+.white {
+    color: rgb(201, 201, 201);
+}
+
+
+/* settings containers  */
+
+
+.settings-containers {
+    font-family: 'Orbitron', sans-serif;
+    background-color: rgb(63, 62, 62);
+    border: 2px solid rgb(54, 54, 54);
+    border-radius: 7%;
+    padding-top: 12px;
+    padding-bottom: 12px;
+    -webkit-box-shadow: 0px 3px 17px 3px rgba(182, 182, 182, 0.07);
+    -moz-box-shadow: 0px 3px 17px 3px rgba(182, 182, 182, 0.07);
+    box-shadow: 0px 3px 17px 3px rgba(182, 182, 182, 0.07);
+
+
+}
+
+.settings-containers-light {
+    background-color: rgb(182, 180, 180);
+    border: solid 2px rgb(170, 167, 167);
+    -webkit-box-shadow: 0px 3px 17px 3px rgba(0, 0, 0, 0.75);
+    -moz-box-shadow: 0px 3px 17px 3px rgba(0, 0, 0, 0.75);
+    box-shadow: 0px 3px 17px 3px rgba(0, 0, 0, 0.75);
+}
+
+.header-game-mode {
+    text-align: center;
+}
+
+
+
+
+/* Rules Page!  */
+
+.rules-info {
+
+    font-family: 'Orbitron', sans-serif;
+    border-radius: 1%;
+    padding-top: 15px;
+    padding-bottom: 30px;
+    
+    margin-left: 15px;
+    margin-right: 15px;
+  
+}
+
+
+
+.rules-info-dark{
+    -webkit-box-shadow: 0px 3px 17px 3px rgba(182, 182, 182, 0.06);
+    -moz-box-shadow: 0px 3px 17px 3px rgba(182, 182, 182, 0.06);
+    box-shadow: 0px 3px 17px 3px rgba(182, 182, 182, 0.06);
+    background-color: rgb(63, 62, 62);
+    border: 2px solid rgb(54, 54, 54);
+}
+
+
+
+.rules-info-light {
+    background-color: rgb(182, 180, 180);
+    border: solid 2px rgb(170, 167, 167);
+    -webkit-box-shadow: 0px 3px 17px 3px rgba(0, 0, 0, 0.75);
+    -moz-box-shadow: 0px 3px 17px 3px rgba(0, 0, 0, 0.75);
+    box-shadow: 0px 3px 17px 3px rgba(0, 0, 0, 0.75);
+}
+
+.rules-header {
+    text-decoration: underline;
+}
+
+.index-header {
+    font-family: 'Press Start 2P', cursive;
+
+}
+
+.index-header-light {
+    color: rgb(62, 62, 62);
+}
+
+.about-para {
+    font-family: 'Share Tech Mono', monospace;
+    font-size: 16px;
+}
+
+.btn-play {
+    font-family: 'Orbitron', sans-serif;
+}
+
+.btn-settings{
+    font-size: 13px;
+}
+
+
+@media (min-width: 1024px){
+
+
+.game-area {
+   margin-right:10px;
+    }
+}
+
+
+/* Scalling for laptops  */
+
+
+@media screen 
+  and (min-device-width: 1200px) 
+  and (max-device-width: 1600px) 
+  and (-webkit-min-device-pixel-ratio: 2)
+  and (min-resolution: 192dpi) { 
+
+
+      .about-para{
+          font-size: 13px;
+      }
+
+      .btn-settings{
+          font-size: 10px;
+      }
+
+      .header-game-mode{
+          font-size: 13px;
+      }
+
+
+      .index-header{
+          font-size: 20px;
+      }
+      
+
+      .stats{
+          font-size: 14px;
+      }
+
+      .main-container{
+          margin-top: 30px;
+      }
+
+      .spawn-point{
+          height: 42px;
+      }
+}
+
+@media screen 
+        and (min-width: 768px) 
+        and (max-width: 1024px) {
+  
+    .btn-settings{
+        font-size: 14px;
+    }
+
+    .settings{
+        margin-top: 20px;
+    }
+    
+    .settings-containers{
+        margin: 10px;;
+    }
+
+    .header-game-mode{
+        font-size: 15px;
+    }
+  }
+
+
+  
+
+/* iphone se media query */
+
+  @media (device-height : 568px) 
+   and (device-width : 320px) 
+   and (-webkit-min-device-pixel-ratio: 2){
+
+    .btn-settings{
+        font-size: 9px;
+    }
+
+    .spawn-point{
+        height: 41px;
+    }
+
+
+.game-area {
+   margin-bottom: 60px;
+    
+
+}
+}
+
+@media (max-width:388px){
+    .btn-settings{
+        font-size: 10px;
+    }
+}
+
